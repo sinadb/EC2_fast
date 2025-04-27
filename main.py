@@ -14,6 +14,10 @@ app = FastAPI()
 def root():
     return {"message": "Welcome to Mangum"}
 
+@app.get("/ping")
+def pint():
+    return {"ping": "pong"}
+
 
 
 
